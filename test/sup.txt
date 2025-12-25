@@ -1,0 +1,5 @@
+bayan.exe -p C:/C++/sem3/course2_lab7/test -d 1 -b 5
+bayan.exe -p C:/C++/sem3/course2_lab7/test/dir1 C:/C++/sem3/course2_lab7/test/dir2
+bayan.exe -p C:/C++/sem3/course2_lab7/test -e C:/C++/sem3/course2_lab7/test/dir1 -d 1
+bayan.exe -p C:/C++/sem3/course2_lab7/test -m "*.JPG" -d 1
+bayan.exe -p C:/C++/sem3/course2_lab7/test -d 1 -s 2000
