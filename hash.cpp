@@ -25,8 +25,8 @@ bool FileHasher::read_next_block() {
         if (!file_) { eof_reached_ = true; return false; }
     }
 
-    std::vector<char> buffer(block_size_, 0); 
-    file_.read(buffer.data(), block_size_);
+    std::vector<char> buffer(block_size_, 0); // Память пол один блок
+    file_.read(buffer.data(), block_size_); // Считывает S байт
     std::streamsize bytes_read = file_.gcount();
 
     if (bytes_read <= 0) { eof_reached_ = true; return false; }
