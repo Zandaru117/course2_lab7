@@ -18,7 +18,7 @@ void process_group(std::vector<HasherPtr> group, size_t block_idx) {
     for (auto& [hash, members] : sub_groups) {
         if (members.size() < 2) continue;
 
-        if (hash == "") { // EOF reached for all files in this subgroup
+        if (hash == "") {
             for (const auto& m : members) std::cout << m->get_path_string() << "\n";
             std::cout << std::endl;
         } else {
